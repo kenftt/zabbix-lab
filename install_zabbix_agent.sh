@@ -33,6 +33,9 @@ sed -i s/"Server=.*"/"Server=zabbix1"/g /etc/zabbix/zabbix_agentd.conf
 sed -i s/"ServerActive=.*"/"ServerActive="/g /etc/zabbix/zabbix_agentd.conf
 sed -i s/"Hostname=.*"/"Hostname=z2"/g /etc/zabbix/zabbix_agentd.conf
 
+# Add zabbix user to the adm group to allow reading of the /var/log/auth.log
+usermod -aG adm zabbix
+
 }
 
 enable_restart_zabbix_agent(){
