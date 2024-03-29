@@ -33,7 +33,7 @@ $DB['DOUBLE_IEEE754']	= true;
 // $ZBX_SERVER			= '';
 // $ZBX_SERVER_PORT		= '';
 
-$ZBX_SERVER_NAME		= 'Xavki';
+$ZBX_SERVER_NAME		= 'Test';
 
 $IMAGE_FORMAT_DEFAULT	= IMAGE_FORMAT_PNG;
 

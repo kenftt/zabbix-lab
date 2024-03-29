@@ -57,8 +57,8 @@ Vagrant.configure(2) do |config|
             # provisionning for all servers
             cfg.vm.provision :shell, :inline => etcHosts
             cfg.vm.provision :shell, :inline => common
-            cfg.vm.provision :shell, :path => "install_xavki.sh"
-
+            cfg.vm.provision :shell, :path => "install_aliases.sh"
+            
             if zabbix == "yes"
                 if node[:type] == "postgres"
                     cfg.vm.provision :shell, :path => "install_postgresql.sh"
